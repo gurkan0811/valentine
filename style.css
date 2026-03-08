@@ -1,0 +1,40 @@
+*
+{
+    margin: 0;
+}
+
+.innehåll
+{
+    display: grid;
+    text-align: center;
+    min-height: 100vh;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    grid-template-rows: 60px 1fr 40px;
+    grid-template-columns: 1fr;
+}
+
+header
+{
+    grid-area: header;
+    background-color: #232323;
+    color: white;
+    padding: 10px;
+}
+
+main
+{
+    grid-area: main;
+    padding: 10px;
+    font-size: 17px;
+}
+
+footer
+{
+    grid-area: footer;
+    background-color: #232323;
+    color: white;
+    padding: 15px;
+}
